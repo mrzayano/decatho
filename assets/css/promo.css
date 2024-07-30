@@ -1,0 +1,36 @@
+
+.container-fluid{
+margin-top: 120px;
+color: #52aa24;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.addButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust as needed */
+  border-radius: 50%;
+}
+
+.addButton i {
+  color: #007bff; /* Adjust icon color */
+  font-size: 24px;
+}

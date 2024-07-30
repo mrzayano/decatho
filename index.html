@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decatho Pizza: Delicious Pizzas Delivered Fast</title>
+    <meta name="description" content="Decatho pizza delivers hot, delicious pizzas straight to your door. Order online now and enjoy fresh ingredients, great value, and super fast delivery!">
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1d483e,
+        #009e79
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #efb358,
+        #db9a37
+    );
+    right: -30px;
+    bottom: -80px;
+}
+.language-box{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.language-box h3{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #ffffff;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.5px;
+}
+.language-box h5{
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 42px;
+    color: #ffffff;
+    font-family: 'Poppins',sans-serif;
+}
+.language-box button{
+    display: none;  /* Hide original buttons */
+}
+
+.language-box a{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 100px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    transition: all 0.3s ease;
+}
+
+.language-box a:hover{
+    background-color: #f2f2f2;
+}
+    </style>
+</head>
+<script src="assets/js/loading.js"></script>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="language-box">
+        <h5>Hello, Welcome to Decatho Pizza</h5>
+        <h3>Select Language</h3>
+        <a style="font-family: 'Poppins',sans-serif;" href="/menu-en">English 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
+        <a style="font-family: 'Poppins',sans-serif;" href="/menu-ar">Arabic 🇸🇦</a>
+    </div>
+
+</body>
+</html>
