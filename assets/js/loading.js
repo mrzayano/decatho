@@ -2,21 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll("img");
 
     images.forEach(image => {
-        // Wrap each image in a container
-        const container = document.createElement('div');
-        container.classList.add('image-container');
-        image.parentNode.insertBefore(container, image);
-        container.appendChild(image);
-
-        // Create the shimmer effect element
-        const shimmer = document.createElement('div');
-        shimmer.classList.add('shimmer');
-        container.appendChild(shimmer);
-
-        // Load high-quality image
         const highQualitySrc = image.src;
 
-        // Create a low-quality version of the image using a canvas
+        // Create a low-quality version of the image
         const lowQualityImage = new Image();
         lowQualityImage.src = highQualitySrc;
         lowQualityImage.onload = function() {
@@ -36,16 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
             // Set the image src to the low-quality version
             image.src = lowQualitySrc;
 
-            // Replace with the high-quality image after 1 second
+            // Replace with the high-quality image after 3 seconds
             setTimeout(() => {
                 image.src = highQualitySrc;
-
-                // Remove shimmer effect once the high-quality image loads
-                image.onload = () => {
-                    shimmer.remove();
-                    image.classList.add('loaded');
-                };
-            }, 1000);
+            }, 3000);
         };
     });
 });
